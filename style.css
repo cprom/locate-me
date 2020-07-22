@@ -12,6 +12,7 @@ body {
 
 #output {
   padding: 20px;
+  margin-top: 100px;
 }
 
 button {
@@ -20,6 +21,7 @@ button {
   background-color: rgb(0, 223, 37);
   height: 140px;
   width: 140px;
+  margin-top: 150px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -34,4 +36,9 @@ button:hover {
   -moz-transition: .5s;
   -ms-transition: .5s;
   -o-transition: .5s;
+}
+
+footer {
+  text-align: center;
+  margin-top: 200px;
 }
