@@ -23,6 +23,7 @@ button {
   height: 140px;
   width: 140px;
   margin-top: 150px;
+  border: none;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -31,7 +32,7 @@ button {
 }
 
 button:hover {
-  background-color: red;
+  background-color: rgb(255, 81, 0);
   transition: .5s;
   -webkit-transition: .5s;
   -moz-transition: .5s;
