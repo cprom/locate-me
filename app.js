@@ -1,7 +1,8 @@
 let outputBox = document.getElementById('output')
 function getLocation() {
-  if (navigator.geolocation.getCurrentPosition) {
-    navigator.geolocation.getCurrentPosition(showPosition)
+  if (navigator.geolocation) {
+    //navigator.geolocation.getCurrentPosition(showPosition)
+    navigator.geolocation.watchPosition(showPosition)
   } else {
     outputBox.innerHTML = "Geolocation is not supported by this brower."
   }
