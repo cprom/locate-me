@@ -10,4 +10,11 @@ function getLocation() {
 
 function showPosition(position) {
   outputBox.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude
+
+  let latlon = "lat=" + position.coords.latitude + "&" + "lon=" + position.coords.longitude
+
+  let map_url = "https://embed.waze.com/iframe?zoom=12&" + latlon + "&pin=1"
+
+  document.getElementById("map").innerHTML = "<iframe src='" + map_url + "'></iframe>"
+
 }
